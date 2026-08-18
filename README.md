@@ -1,5 +1,9 @@
 # QA Scout
 
+<p align="center">
+  <img src="icon.png" width="160" height="160" alt="QA Scout">
+</p>
+
 **QA Scout catches bugs before your users do.**
 
 One QA system. One verdict. One report.
@@ -25,11 +29,11 @@ Source, API, and UI go in. You get one verdict and one report: a short PDF for t
 
 **macOS, Apple Silicon:** [Releases](https://github.com/asxyw/qa-scout-app/releases)
 
-Current build: **0.1.71**.
+Current build: **0.1.72**.
 
 ## Install on Mac
 
-1. Download `QA-Scout-0.1.71-mac-arm64.zip` and unzip it.
+1. Download `QA-Scout-0.1.72-mac-arm64.zip` and unzip it.
 2. Move `QA Scout.app` to Applications, or run it from Downloads.
 3. First launch: **right-click → Open**. macOS will warn because this build is not Apple-notarized yet. Confirm Open.
 4. Sign in, or start a **3-run trial** on this Mac.
