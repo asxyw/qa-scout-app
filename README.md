@@ -51,9 +51,9 @@ Intel Macs are not in this release.
 
 No signal on a gate means skip, not a fake pass.
 
-## Starter access
+## Early access
 
-Paid login is not self-serve yet. You can [request a Starter](https://scout-api.win) (30 days, 20 runs a month). Reply goes to the email you give.
+QA Scout is currently in early access. [Request free beta access](https://scout-api.win) (30 days, 20 runs/mo) to try it on your project. Reply goes to the email you give.
 
 Or message Telegram [@asxyw](https://t.me/asxyw).
 
