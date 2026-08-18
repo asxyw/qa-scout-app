@@ -55,7 +55,7 @@ No signal on a gate means skip, not a fake pass.
 
 QA Scout is currently in early access. [Request free beta access](https://scout-api.win) (30 days, 20 runs/mo) to try it on your project. Reply goes to the email you give.
 
-Or message Telegram [@asxyw](https://t.me/asxyw).
+[Privacy / Datenschutz](https://scout-api.win/privacy/) · Telegram [@asxyw](https://t.me/asxyw)
 
 ## License
 
