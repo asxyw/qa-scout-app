@@ -19,11 +19,15 @@ Current build: **0.1.70**.
 
 Intel Macs are not in this release.
 
+## Starter access
+
+Paid login is not self-serve yet. You can [request a Starter](https://scout-api.win) (30 days, 20 runs a month). Reply goes to the email you give.
+
+Or message Telegram [@asxyw](https://t.me/asxyw).
+
 ## License
 
 Trial: **3 runs** per computer. A new account does not give another trial on the same Mac.
-
-Paid login: message Telegram [@asxyw](https://t.me/asxyw).
 
 Crawl data, screenshots, and PDFs stay on your Mac.
 
