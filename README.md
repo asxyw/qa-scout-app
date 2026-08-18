@@ -8,6 +8,8 @@
 
 One QA system. One verdict. One report.
 
+Crawl your website, run automated QA gates, collect evidence, and generate a client-ready report.
+
 ```mermaid
 flowchart TB
   SRC[Source] --> QS[QA Scout]
