@@ -1,8 +1,12 @@
 # QA Scout
 
-Desktop health-check for a live website. Scout crawls a URL, runs Playwright gates, and exports a short client PDF plus a developer zip.
+**QA Scout catches bugs before your users do.**
 
-Gates include pages, SEO, accessibility, visual, headers, and links. After one crawl, selected gates can run in parallel.
+Automated testing for web pages, accessibility, SEO, visual regressions, APIs, source, and CI/CD — in one desktop pass.
+
+Scout crawls a live URL, runs the gates, and exports a short PDF for the client plus a zip for engineers.
+
+Site gates always run from the URL. Paste a public GitHub repo for source and CI/CD. Attach OpenAPI for API checks.
 
 ## Download
 
@@ -19,6 +23,16 @@ Current build: **0.1.70**.
 
 Intel Macs are not in this release.
 
+## Use it
+
+1. Save a project with the site URL.
+2. Run **Standard**. That is pages, SEO, accessibility, visual, headers, and links.
+3. Optional: add an **OpenAPI** file for API checks.
+4. Optional: paste a **public GitHub URL** and Clone. That turns on Source, CI, and CD (workflows, artifacts, no plaintext secrets). A github.com Base URL stays the website — it is not the repo.
+5. Export: short client PDF (plain language) and a developer zip (`developers.md`, `findings.json`, evidence).
+
+No signal on a gate means skip, not a fake pass.
+
 ## Starter access
 
 Paid login is not self-serve yet. You can [request a Starter](https://scout-api.win) (30 days, 20 runs a month). Reply goes to the email you give.
@@ -30,14 +44,6 @@ Or message Telegram [@asxyw](https://t.me/asxyw).
 Trial: **3 runs** per computer. A new account does not give another trial on the same Mac.
 
 Crawl data, screenshots, and PDFs stay on your Mac.
-
-## What you get
-
-- Catalog of pass / fail / skip per gate
-- Client PDF in plain language (no locators)
-- Developer zip: `developers.md`, `findings.json`, evidence
-
-Accessibility findings in the developer zip name the element (for example which image is missing `alt`). The client PDF stays short.
 
 ## Requirements
 
