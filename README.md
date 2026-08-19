@@ -36,17 +36,24 @@ Sample project: [Sauce Demo](https://www.saucedemo.com) (Sauce Labs’ public te
 
 ### Run
 
-<img src="docs/sample/screenshots/app-run.png" width="720" alt="QA Scout Run — Standard gates on Sauce Demo">
+<img src="docs/sample/screenshots/app-run.png" width="720" alt="QA Scout Run — Sauce Demo">
 
 ## Sample scan
 
-Standard gates on Sauce Demo: pages, SEO, accessibility, visual, headers, links. API / Source / CI / CD / GraphQL had no context in this scan (skip, not a fake pass).
+Standard gates on Sauce Demo: pages, SEO, accessibility, visual, headers, links. Sampled 5 pages (max 15, depth 2). API / Source / CI / CD / GraphQL had no context in this scan (skip, not a fake pass).
+
+2 of 6 checks found problems: accessibility (`select-name`) and missing security headers (HSTS / CSP). Pages, visual, and links passed.
+
+<img src="docs/sample/screenshots/report-cover.png" width="720" alt="QA Scout report cover for saucedemo.com">
+
+<details>
+<summary>More scan results</summary>
+
+<br>
 
 **Client PDF:** [report.pdf](docs/sample/report.pdf) · [report.md](docs/sample/report.md)
 
-**Full pack (all fronts):** [qa-scout-report.zip](docs/sample/qa-scout-report.zip) · [developers.md](docs/sample/developers.md) · [findings.json](docs/sample/findings.json)
-
-<img src="docs/sample/screenshots/report-cover.png" width="720" alt="QA Scout report cover for saucedemo.com">
+**Full pack:** [qa-scout-report.zip](docs/sample/qa-scout-report.zip) · [developers.md](docs/sample/developers.md) · [findings.json](docs/sample/findings.json)
 
 Visual baselines (mobile, tablet, desktop) and the accessibility fail:
 
@@ -55,6 +62,8 @@ Visual baselines (mobile, tablet, desktop) and the accessibility fail:
 <img src="docs/sample/screenshots/visual-desktop.png" width="720" alt="Sauce Demo inventory, desktop visual baseline">
 
 <img src="docs/sample/screenshots/a11y-fail.png" width="720" alt="Accessibility fail on Sauce Demo inventory">
+
+</details>
 
 ## Download
 

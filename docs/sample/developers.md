@@ -2,7 +2,8 @@
 
 - URL: https://www.saucedemo.com
 - Date: 2026-08-19
-- Scout version: 0.1.73
+- Scout version: 0.1.74
+- Sampled 5 pages (max 15, depth 2)
 - Slots run: url, seo, a11y, visual, headers, links
 - Slots skip: api, source, ci, cd, graphql
 - Slots baseline: —
@@ -17,7 +18,7 @@
 - cd (CD): skip — no context
 - a11y (A11y): fail 1/1 — select-name
 - visual (Visual): pass 3/3
-- headers (Headers): pass 2/2
+- headers (Headers): fail 1/3 — frame-ancestors
 - links (Links): pass 2/2
 - graphql (GraphQL): skip — no context
 
@@ -27,7 +28,7 @@ Findings are not a Scout failure. Gates (the spec) are separate.
 
 - S2/P2 `a11y-select-name` (https://www.saucedemo.com/inventory.html): Select element must have an accessible name
   - `select` — `<select class="product_sort_container" data-test="product-sort-container"><option value="az">Name (A to Z)</option><option value="za">Name (Z to A)</option><option value="lohi">Pri`
-- S2/P2 `headers-missing-hsts` (https://www.saucedemo.com/): Missing Strict-Transport-Security — Hardening finding, not a broken suite
+- S2/P2 `headers-missing-hsts` (https://www.saucedemo.com/): Missing Strict-Transport-Security — Missing Strict-Transport-Security
 - S3/P3 `headers-missing-csp` (https://www.saucedemo.com/): Missing Content-Security-Policy
 
 ## Appendix
@@ -64,3 +65,5 @@ Visual pass (compared to baseline).
 ## Gate screenshots
 
 ![a11y · failed gate](screenshots/a11y-failed.png)
+
+![headers · failed gate](screenshots/headers-failed.png)

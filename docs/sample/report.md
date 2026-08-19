@@ -2,11 +2,12 @@
 
 - URL: https://www.saucedemo.com
 - Date: 2026-08-19
-- Scout version: 0.1.73
+- Scout version: 0.1.74
+- Sampled 5 pages (max 15, depth 2)
 
 ## Result
 
-1 of 6 checks found problems.
+2 of 6 checks found problems.
 
 ## How the checks went
 
@@ -18,13 +19,14 @@
 - CD: not in this scan
 - Accessibility: failed 1 of 1
 - Visual: passed 3 of 3
-- Headers: passed 2 of 2
+- Headers: failed 1 of 3
 - Links: passed 2 of 2
 - GraphQL: not in this scan
 
 ## What we found
 
 - Accessibility did not pass.
+- Headers did not pass.
 - SEO volume (descriptions / sitemap orphans) is summarized below, not here.
 
 ## Fix first
@@ -53,3 +55,5 @@ Visual pass (compared to baseline).
 ![1280 × 800; Desktop](screenshots/visual-baseline-1280x800-3.png)
 
 ![a11y · failed gate](screenshots/a11y-failed.png)
+
+![headers · failed gate](screenshots/headers-failed.png)

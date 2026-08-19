@@ -49,7 +49,7 @@
     "variant": "headers",
     "severity": "S2",
     "title": "Missing Strict-Transport-Security",
-    "detail": "Hardening finding, not a broken suite",
+    "detail": "Missing Strict-Transport-Security",
     "target": "https://www.saucedemo.com/",
     "source": "crawl",
     "priority": "P2"
