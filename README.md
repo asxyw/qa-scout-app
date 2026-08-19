@@ -22,30 +22,36 @@ After you sign in, the same account data (runs left, time remaining, Scout ID) i
 
 Sample project: [Sauce Demo](https://www.saucedemo.com) (Sauce Labs’ public test store, not a real shop).
 
+### Setup
+
+<img src="docs/sample/screenshots/app-setup.png" width="720" alt="QA Scout Setup — Chromium ready">
+
 ### Project
 
 <img src="docs/sample/screenshots/app-project.png" width="720" alt="QA Scout Project — Sauce Demo">
-
-### Run
-
-<img src="docs/sample/screenshots/app-run.png" width="720" alt="QA Scout Run — Standard gates on Sauce Demo">
 
 ### Catalog
 
 <img src="docs/sample/screenshots/app-catalog.png" width="720" alt="QA Scout Catalog — Sauce Demo run list and details">
 
-### Setup
+### Run
 
-<img src="docs/sample/screenshots/app-setup.png" width="720" alt="QA Scout Setup — Chromium ready">
+<img src="docs/sample/screenshots/app-run.png" width="720" alt="QA Scout Run — Standard gates on Sauce Demo">
 
-### Report
+## Sample scan
 
-Client PDF ([download](docs/sample/report.pdf)):
+Standard gates on Sauce Demo: pages, SEO, accessibility, visual, headers, links. API / Source / CI / CD / GraphQL had no context in this scan (skip, not a fake pass).
+
+**Client PDF:** [report.pdf](docs/sample/report.pdf) · [report.md](docs/sample/report.md)
+
+**Full pack (all fronts):** [qa-scout-report.zip](docs/sample/qa-scout-report.zip) · [developers.md](docs/sample/developers.md) · [findings.json](docs/sample/findings.json)
 
 <img src="docs/sample/screenshots/report-cover.png" width="720" alt="QA Scout report cover for saucedemo.com">
 
-### Visual
+Visual baselines (mobile, tablet, desktop) and the accessibility fail:
 
+<img src="docs/sample/screenshots/visual-mobile.png" width="280" alt="Sauce Demo inventory, mobile visual baseline">
+<img src="docs/sample/screenshots/visual-tablet.png" width="360" alt="Sauce Demo inventory, tablet visual baseline">
 <img src="docs/sample/screenshots/visual-desktop.png" width="720" alt="Sauce Demo inventory, desktop visual baseline">
 
 <img src="docs/sample/screenshots/a11y-fail.png" width="720" alt="Accessibility fail on Sauce Demo inventory">

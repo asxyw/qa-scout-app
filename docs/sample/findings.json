@@ -1,0 +1,94 @@
+[
+  {
+    "id": "seo-missing-h1",
+    "variant": "seo",
+    "severity": "S3",
+    "title": "No h1 in crawl snapshot",
+    "target": "https://www.saucedemo.com/inventory.html",
+    "source": "crawl",
+    "priority": "P3"
+  },
+  {
+    "id": "seo-title-length",
+    "variant": "seo",
+    "severity": "S4",
+    "title": "Title length outside 10–70 characters",
+    "detail": "9 chars",
+    "target": "https://www.saucedemo.com/inventory.html",
+    "source": "crawl",
+    "priority": "P4"
+  },
+  {
+    "id": "seo-description-length",
+    "variant": "seo",
+    "severity": "S4",
+    "title": "Meta description length outside 50–170 characters",
+    "detail": "24 chars",
+    "target": "https://www.saucedemo.com/inventory.html",
+    "source": "crawl",
+    "priority": "P4"
+  },
+  {
+    "id": "a11y-select-name",
+    "variant": "a11y",
+    "severity": "S2",
+    "title": "Select element must have an accessible name",
+    "detail": "critical",
+    "target": "https://www.saucedemo.com/inventory.html",
+    "source": "runtime",
+    "nodes": [
+      {
+        "selector": "select",
+        "html": "<select class=\"product_sort_container\" data-test=\"product-sort-container\"><option value=\"az\">Name (A to Z)</option><option value=\"za\">Name (Z to A)</option><option value=\"lohi\">Pri"
+      }
+    ],
+    "priority": "P2"
+  },
+  {
+    "id": "headers-missing-hsts",
+    "variant": "headers",
+    "severity": "S2",
+    "title": "Missing Strict-Transport-Security",
+    "detail": "Hardening finding, not a broken suite",
+    "target": "https://www.saucedemo.com/",
+    "source": "crawl",
+    "priority": "P2"
+  },
+  {
+    "id": "headers-missing-csp",
+    "variant": "headers",
+    "severity": "S3",
+    "title": "Missing Content-Security-Policy",
+    "target": "https://www.saucedemo.com/",
+    "source": "crawl",
+    "priority": "P3"
+  },
+  {
+    "id": "headers-missing-clickjacking",
+    "variant": "headers",
+    "severity": "S3",
+    "title": "No X-Frame-Options or CSP frame-ancestors",
+    "target": "https://www.saucedemo.com/",
+    "source": "crawl",
+    "priority": "P3"
+  },
+  {
+    "id": "headers-missing-referrer-policy",
+    "variant": "headers",
+    "severity": "S4",
+    "title": "Missing Referrer-Policy",
+    "target": "https://www.saucedemo.com/",
+    "source": "crawl",
+    "priority": "P4"
+  },
+  {
+    "id": "headers-missing-x-content-type-options",
+    "variant": "headers",
+    "severity": "S3",
+    "title": "Missing X-Content-Type-Options",
+    "detail": "nosniff not set — passive WSTG",
+    "target": "https://www.saucedemo.com/",
+    "source": "crawl",
+    "priority": "P3"
+  }
+]
