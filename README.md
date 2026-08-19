@@ -1,94 +1,77 @@
-# QA Scout
-
 <p align="center">
   <img src="icon.png" width="160" height="160" alt="QA Scout">
 </p>
 
-**QA Scout catches bugs before your users do.**
+<h1 align="center">QA Scout</h1>
 
-One QA system. One verdict. One report.
+<p align="center"><strong>One QA system. One verdict. One report.</strong></p>
 
-Crawl your website, run automated QA gates, collect evidence, and generate a client-ready report.
+<p align="center">
+  <a href="https://github.com/asxyw/qa-scout-app/releases"><img src="https://img.shields.io/github/v/release/asxyw/qa-scout-app" alt="GitHub release"></a>
+  <img src="https://img.shields.io/badge/macOS-Apple%20Silicon-lightgrey" alt="macOS Apple Silicon">
+  <img src="https://img.shields.io/badge/status-early%20access-blue" alt="early access">
+</p>
 
-```mermaid
-flowchart TB
-  SRC[Source] --> QS[QA Scout]
-  API[API] --> QS
-  UI[UI] --> QS
-  QS --> A[Accessibility / Security]
-  QS --> B[SEO / Links]
-  QS --> C[Visual regression]
-  A --> V[QA verdict — pass / fail]
-  B --> V
-  C --> V
-  V --> CI[CI]
-  V --> CD[CD]
-```
+## Overview
 
-Source, API, and UI go in. You get one verdict and one report: a short PDF for the client plus a zip for engineers.
+QA Scout is a Mac app that crawls a website, runs pages, SEO, accessibility, visual, headers, and links in one pass, and returns a single verdict: a short client PDF plus a developer zip.
+
+After you sign in, the same account data (runs left, time remaining, Scout ID) is on this Mac, on the website, and in the Telegram bot. You get those from the app and the welcome email — this page is the download.
+
+## Screenshots
+
+Sample project: [Sauce Demo](https://www.saucedemo.com) (Sauce Labs’ public test store, not a real shop).
+
+### Project
+
+<img src="docs/sample/screenshots/app-project.png" width="720" alt="QA Scout Project — Sauce Demo">
+
+### Run
+
+<img src="docs/sample/screenshots/app-run.png" width="720" alt="QA Scout Run — Standard gates on Sauce Demo">
+
+### Catalog
+
+<img src="docs/sample/screenshots/app-catalog.png" width="720" alt="QA Scout Catalog — Sauce Demo run list and details">
+
+### Setup
+
+<img src="docs/sample/screenshots/app-setup.png" width="720" alt="QA Scout Setup — Chromium ready">
+
+### Report
+
+Client PDF ([download](docs/sample/report.pdf)):
+
+<img src="docs/sample/screenshots/report-cover.png" width="720" alt="QA Scout report cover for saucedemo.com">
+
+### Visual
+
+<img src="docs/sample/screenshots/visual-desktop.png" width="720" alt="Sauce Demo inventory, desktop visual baseline">
+
+<img src="docs/sample/screenshots/a11y-fail.png" width="720" alt="Accessibility fail on Sauce Demo inventory">
 
 ## Download
 
 **macOS, Apple Silicon:** [Releases](https://github.com/asxyw/qa-scout-app/releases)
 
-Current build: **0.1.73**.
+Intel Macs are not in this release.
 
-## Install on Mac
+## Install
 
-1. Download `QA-Scout-0.1.73-mac-arm64.zip` and unzip it.
+1. Download the latest `QA-Scout-*-mac-arm64.zip` and unzip it.
 2. Move `QA Scout.app` to Applications, or run it from Downloads.
 3. First launch: **right-click → Open**. macOS will warn because this build is not Apple-notarized yet. Confirm Open.
 4. Sign in, or start a **3-run trial** on this Mac.
 
-Intel Macs are not in this release.
-
-## Use it
-
-1. Save a project with the site URL.
-2. Run **Standard**. That is pages, SEO, accessibility, visual, headers, and links. API is included when the crawl already saw same-origin XHR, or when you attach an OpenAPI file.
-3. Optional: paste a **public GitHub URL** and Clone. That turns on Source, CI, and CD (workflows, artifacts, no plaintext secrets). A github.com Base URL stays the website — it is not the repo.
-4. Export: short client PDF (plain language) and a developer zip (`developers.md`, `findings.json`, evidence).
-
-No signal on a gate means skip, not a fake pass.
-
-## Sample
-
-This scan used [Sauce Demo](https://www.saucedemo.com), Sauce Labs’ public test store. It exists for automated QA. It is not a real shop.
-
-Setup and Run (project: Sauce Demo):
-
-<img src="docs/sample/screenshots/app-setup.png" width="720" alt="QA Scout Setup — Chromium ready">
-
-<img src="docs/sample/screenshots/app-run.png" width="720" alt="QA Scout Run — Sauce Demo, Standard gates">
-
-Client report ([PDF](docs/sample/report.pdf)):
-
-<img src="docs/sample/screenshots/report-cover.png" width="720" alt="QA Scout report cover for saucedemo.com">
-
-Visual baseline (desktop) and an accessibility fail on the inventory page:
-
-<img src="docs/sample/screenshots/visual-desktop.png" width="720" alt="Swag Labs products page, desktop visual baseline">
-
-<img src="docs/sample/screenshots/a11y-fail.png" width="720" alt="Accessibility fail screenshot on Sauce Demo inventory">
+First screen is Setup — Chromium on, then you can run.
 
 ## Early access
 
-QA Scout is currently in early access. [Request free beta access](https://scout-api.win) (30 days, 20 runs/mo) to try it on your project. Reply goes to the email you give.
+QA Scout is in early access. [Request free beta access](https://scout-api.win) (30 days, 20 runs/mo). Reply goes to the email you give.
 
-[Privacy / Datenschutz](https://scout-api.win/privacy/) · Telegram [@asxyw](https://t.me/asxyw)
+Crawl data, screenshots, and PDFs stay on your Mac. Trial: **3 runs** per computer. A new account does not give another trial on the same Mac.
 
-## License
-
-Trial: **3 runs** per computer. A new account does not give another trial on the same Mac.
-
-Crawl data, screenshots, and PDFs stay on your Mac.
-
-## Requirements
-
-- macOS on Apple Silicon
-- Network access to the site you scan
-
-This repository is the download page. It does not contain product source.
+[Privacy / Datenschutz](https://scout-api.win/privacy/)
 
 ## Author
 
