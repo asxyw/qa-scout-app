@@ -51,6 +51,26 @@ Intel Macs are not in this release.
 
 No signal on a gate means skip, not a fake pass.
 
+## Sample
+
+This scan used [Sauce Demo](https://www.saucedemo.com), Sauce Labs’ public test store. It exists for automated QA. It is not a real shop.
+
+Setup and Run (project: Sauce Demo):
+
+<img src="docs/sample/screenshots/app-setup.png" width="720" alt="QA Scout Setup — Chromium ready">
+
+<img src="docs/sample/screenshots/app-run.png" width="720" alt="QA Scout Run — Sauce Demo, Standard gates">
+
+Client report ([PDF](docs/sample/report.pdf)):
+
+<img src="docs/sample/screenshots/report-cover.png" width="720" alt="QA Scout report cover for saucedemo.com">
+
+Visual baseline (desktop) and an accessibility fail on the inventory page:
+
+<img src="docs/sample/screenshots/visual-desktop.png" width="720" alt="Swag Labs products page, desktop visual baseline">
+
+<img src="docs/sample/screenshots/a11y-fail.png" width="720" alt="Accessibility fail screenshot on Sauce Demo inventory">
+
 ## Early access
 
 QA Scout is currently in early access. [Request free beta access](https://scout-api.win) (30 days, 20 runs/mo) to try it on your project. Reply goes to the email you give.
