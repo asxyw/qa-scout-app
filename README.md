@@ -52,9 +52,9 @@ Standard gates on Sauce Demo: pages, SEO, accessibility, visual, headers, links.
 
 <br>
 
-**Client PDF:** [report.pdf](docs/sample/report.pdf)  ·  [report.md](docs/sample/report.md)
+**Client PDF:** [report.pdf](docs/sample/report.pdf)  |  [report.md](docs/sample/report.md)
 
-**Full pack:** [qa-scout-report.zip](docs/sample/qa-scout-report.zip)  ·  [developers.md](docs/sample/developers.md)  ·  [findings.json](docs/sample/findings.json)
+**Full pack:** [qa-scout-report.zip](docs/sample/qa-scout-report.zip)  |  [developers.md](docs/sample/developers.md)  |  [findings.json](docs/sample/findings.json)
 
 Visual baselines (mobile, tablet, desktop) and the accessibility fail:
 
