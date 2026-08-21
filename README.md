@@ -70,9 +70,9 @@ Visual baselines (mobile, tablet, desktop) and the accessibility fail:
 
 Pick your OS. Same release, two zips.
 
-**macOS, Apple Silicon:** [QA-Scout-0.1.80-mac-arm64.zip](https://github.com/asxyw/qa-scout-app/releases/download/v0.1.80/QA-Scout-0.1.80-mac-arm64.zip)
+**macOS, Apple Silicon:** [QA-Scout-0.1.81-mac-arm64.zip](https://github.com/asxyw/qa-scout-app/releases/download/v0.1.81/QA-Scout-0.1.81-mac-arm64.zip)
 
-**Windows, x64:** [QA-Scout-0.1.80-win-x64.zip](https://github.com/asxyw/qa-scout-app/releases/download/v0.1.80/QA-Scout-0.1.80-win-x64.zip)
+**Windows, x64:** [QA-Scout-0.1.81-win-x64.zip](https://github.com/asxyw/qa-scout-app/releases/download/v0.1.81/QA-Scout-0.1.81-win-x64.zip)
 
 Intel Macs and Windows ARM64 are not in this release. All builds: [Releases](https://github.com/asxyw/qa-scout-app/releases).
 
